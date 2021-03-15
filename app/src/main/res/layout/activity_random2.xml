@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_random2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="16dp"
+    android:paddingTop="16dp"
+    android:paddingRight="16dp"
+    android:paddingBottom="16dp"
+    tools:context=".RandomActivity">
+
+  <TextView
+      android:id="@+id/tv_random_title"
+      android:layout_width="wrap_content"
+      android:layout_height="50dp"
+      android:textSize="35sp" />
+
+  <TextView
+      android:id="@+id/tv_random_descrip"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:textSize="25sp"
+      android:layout_below="@id/tv_random_title"/>
+
+  <Button
+      android:id="@+id/b_randomize"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="Randomize!"
+      android:gravity="center_horizontal"
+      android:layout_below="@id/tv_random_descrip"/>
+
+  <ScrollView
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:layout_below="@id/b_randomize">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/iv_title_image"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:contentDescription="Image of Single Title" />
+
+      <TextView
+          android:id="@+id/tv_title_text"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_below="@id/iv_title_image"
+          />
+
+      <TextView
+            android:id="@+id/tv_descrip_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_title_text"/>
+
+        <TextView
+            android:id="@+id/tv_score_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_descrip_text"/>
+
+        <TextView
+            android:id="@+id/tv_rating_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_score_text"
+            />
+
+        <TextView
+            android:id="@+id/tv_airing_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_rating_text"/>
+
+        <TextView
+            android:id="@+id/tv_type_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_airing_text"
+            />
+    </RelativeLayout>
+  </ScrollView>
+
+</RelativeLayout>
